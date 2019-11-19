@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 
 Route::get('/employees', 'EmployeesController@index');
-Route::get('/employees/create', 'EmployeesController@create');
+Route::post('/employees', 'EmployeesController@store');
 Route::get('/employees/create', 'EmployeesController@create');
 Route::get('/employees/{id}/edit', 'EmployeesController@edit');
 
@@ -27,11 +27,11 @@ Route::get('/posts/create', 'PostsController@create');
 Route::get('/posts/{id}/edit', 'PostsController@edit');
  
 Route::get('/comments', 'CommentsController@index');
-Route::get('/comments/create', 'CommentsController@create');
+Route::post('/comments', 'CommentsController@store');
 Route::get('/comments/create', 'CommentsController@create');
 Route::get('/comments/{id}/edit', 'CommentsController@edit');
 
-Route::get('/roles', 'RoutesController@index');
-Route::get('/roles/create', 'RoutesController@create');
+Route::get('/roles', 'RolesController@index');
+Route::post('/roles', 'RolesController@store');
 Route::get('/roles/create', 'RolesController@create');
-Route::get('/roles/{id}/edit', 'RoutesController@edit');
+Route::get('/roles/{id}/edit', 'RolesController@edit');

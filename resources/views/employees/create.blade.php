@@ -10,21 +10,36 @@
 ​
 <div class="container">
   <h2>Employee form</h2>
-  <form action="{{ url('posts')}}" method="POST">
+  <form action="{{ url('employees')}}" method="POST">
     @csrf
     
+    <div class="form-group">
+      <label for="id">Id:</label>
+      <input type="number" class="form-control" id="id" name="id">
+    </div>
+
     <div class="form-group">
       <label for="name">Name:</label>
       <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
     </div>
+
     <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      <label for="title">Title:</label>
+      <input type="text" class="form-control" id="title" placeholder="Enter title" name="title">
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="address" class="form-control" id="address" placeholder="Enter address" name="address">
     </div>
 ​
     <div class="form-group">
-      <label for="address">Address:</label>
-      <input type="text" class="form-control" id="address" placeholder="Enter Address" name="address">
+      <label for="phone">Phone:</label>
+      <input type="text" class="form-control" id="phone" placeholder="Enter phone" name="phone">
+    </div>
+
+    <div class="form-group">
+      <label for="salary">Salary:</label>
+      <input type="text" class="form-control" id="salary" name="salary">
     </div>
     
     <button type="submit" class="btn btn-primary">Submit</button>

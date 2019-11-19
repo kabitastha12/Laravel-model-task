@@ -10,17 +10,17 @@
 ​
 <div class="container">
   <h2>Roles</h2>
-  <form action="{{ url('posts')}}" method="POST">
+  <form action="{{ url('roles')}}" method="POST">
     @csrf
     
-     <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
-    </div>
     <div class="form-group">
-      <label for="title">Title:</label>
-      <input type="title" class="form-control" id="title" placeholder="Enter title" name="title">
+      <label for="id">Id:</label>
+      <input type="number" class="form-control" id="id" name="id">
     </div>
+
+    <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" name="name">
+    </div> 
 ​
     <div class="form-group">
       <label for="description">Description:</label>

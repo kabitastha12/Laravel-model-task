@@ -23,9 +23,10 @@ class RolesController extends Controller
 
 	public function store(Request $request)
 	{
-		$post = new Role;
-		$post->title = $request->title;
-		$post->description = $request->description;
-		$post->save();
+		$role = new Role;
+		$role->id = $request->id;
+		$role->name = $request->name;
+		$role->description = $request->description;
+		$role->save();
     }
 }

@@ -1,5 +1,6 @@
 <?php
 
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -23,7 +24,6 @@ class PostsController extends Controller
 	public function store(Request $request)
 	{
 		$post = new Post;
-		$post->name = $request->name;
 		$post->title = $request->title;
 		$post->description = $request->description;
 		$post->save();

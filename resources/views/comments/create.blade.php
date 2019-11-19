@@ -10,7 +10,7 @@
 ​
 <div class="container">
   <h2>Comments</h2>
-  <form action="{{ url('posts')}}" method="POST">
+  <form action="{{ url('comments')}}" method="POST">
     @csrf
     
     <div class="form-group">
